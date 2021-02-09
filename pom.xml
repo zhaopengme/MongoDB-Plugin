@@ -5,7 +5,7 @@
 
     <groupId>com.cybermkd</groupId>
     <artifactId>MongodbPlugin</artifactId>
-    <version>1.0.8.2</version>
+    <version>1.0.8.4</version>
     <packaging>jar</packaging>
 
     <name>MongodbPlugin</name>
@@ -52,22 +52,16 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.10</version>
+            <scope>test</scope>
         </dependency>
 
-
-        <!--JFinal基本包-->
-        <dependency>
-            <groupId>com.jfinal</groupId>
-            <artifactId>jfinal</artifactId>
-            <version>2.2</version>
-            <scope>provided</scope>
-        </dependency>
 
         <!--MongoDB驱动-->
         <dependency>
             <groupId>org.mongodb</groupId>
-            <artifactId>mongo-java-driver</artifactId>
-            <version>3.4.0</version>
+            <artifactId>mongodb-driver</artifactId>
+            <version>3.4.1</version>
+            <scope>provided</scope>
         </dependency>
 
         <!--JSON插件-->
@@ -75,20 +69,6 @@
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>1.2.7</version>
-        </dependency>
-
-        <!--resty-->
-        <dependency>
-            <groupId>cn.dreampie</groupId>
-            <artifactId>resty-common</artifactId>
-            <version>1.0</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.cybermkd</groupId>
-            <artifactId>ICEREST</artifactId>
-            <version>1.0.1.3</version>
             <scope>provided</scope>
         </dependency>
 
@@ -96,7 +76,8 @@
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-            <version>1.1.2</version>
+            <version>1.2.3</version>
+            <scope>provided</scope>
         </dependency>
 
         <!--参数校验-->
@@ -123,6 +104,7 @@
             <groupId>org.jsoup</groupId>
             <artifactId>jsoup</artifactId>
             <version>1.9.2</version>
+            <scope>provided</scope>
         </dependency>
 
         <!--参数日期校验-->
@@ -192,21 +174,6 @@
                                 <phase>package</phase>
                                 <goals>
                                     <goal>jar</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                    <!-- Gpg Signature -->
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-gpg-plugin</artifactId>
-                        <version>1.6</version>
-                        <executions>
-                            <execution>
-                                <id>sign-artifacts</id>
-                                <phase>verify</phase>
-                                <goals>
-                                    <goal>sign</goal>
                                 </goals>
                             </execution>
                         </executions>

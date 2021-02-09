@@ -27,3 +27,9 @@ Developer：[https://github.com/T-baby/MongoDB-Plugin/](https://github.com/T-bab
 Download：[https://github.com/T-baby/MongoDB-Plugin/releases](https://github.com/T-baby/MongoDB-Plugin/releases)
 
 
+
+
+
+---
+
+mvn deploy:deploy-file -Dfile=./target/MongodbPlugin.jar -DgroupId=com.cybermkd -DartifactId=MongodbPlugin  -Dpackaging=jar -Durl=file:../maven-repository/repository -DrepositoryId=maven-repository -DupdateReleaseInfo=true -Dmaven.test.skip=true  -Dversion=1.0.8.4

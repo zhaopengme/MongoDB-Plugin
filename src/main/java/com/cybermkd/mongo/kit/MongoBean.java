@@ -12,6 +12,7 @@ import java.util.Map;
  */
 public class MongoBean implements Cloneable {
 
+    @Override
     public Object clone() {
         try {
             return super.clone();

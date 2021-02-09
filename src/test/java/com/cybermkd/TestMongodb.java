@@ -1,11 +1,11 @@
 package com.cybermkd;
 
 import com.alibaba.fastjson.JSONArray;
-import com.cybermkd.log.Logger;
 import com.cybermkd.mongo.kit.MongoKit;
 import com.cybermkd.mongo.kit.MongoQuery;
 import com.cybermkd.mongo.plugin.MongoPlugin;
 import com.mongodb.MongoClient;
+import org.jboss.logging.Logger;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 
